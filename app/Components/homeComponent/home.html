@@ -1,0 +1,127 @@
+<div *ngIf="auth.authenticated()"><dashboard></dashboard></div>
+<div *ngIf="!auth.authenticated()">
+
+<!--Header -->
+<div class = "jumbotron">
+  <div class = "jumbocontainer">
+    <div style = "font-size: 4.5rem; font-weight: 300;"> <h3>WELCOME TO SHEET MUSIC INTERNATIONAL</h3></div>
+    <p>
+      This is an ongoing project to provide a one-stop website to obtain classical sheet music.
+      We hope you enjoy your time and please let us know how we can improve the site.
+    </p>
+  </div>
+</div>
+<!--End header-->
+
+
+<!-- Carousel container -->
+<div id="my-pics" class="carousel slide" data-ride="carousel">
+
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#my-pics" data-slide-to="0" class="active"></li>
+<li data-target="#my-pics" data-slide-to="1"></li>
+<li data-target="#my-pics" data-slide-to="2"></li>
+</ol>
+
+<!-- Content -->
+<div class="carousel-inner" role="listbox">
+
+<!-- Slide 1 -->
+<div class="carousel-item active" style="text-align: center;">
+<img src="http://mediad.publicbroadcasting.net/p/kunr/files/styles/x_large/public/201408/Classical-Music-Wallpaper.jpg" alt="download">
+<div class="carousel-caption">
+<h3>Sheet Music Database</h3>
+<p>Find and download thousands of pieces</p>
+</div>
+</div>
+
+<!-- Slide 2 -->
+<div class="carousel-item" style="text-align: center;">
+<img src="http://www.nixmuse.com/sliderClassical/data1/images/classicalmusicfull.jpg" alt="share">
+<div class="carousel-caption">
+<h3>Share Music with the World!</h3>
+<p>Made for aspiring and professional composers alike</p>
+</div>
+</div>
+
+<!-- Slide 3 -->
+<div class="carousel-item" style="text-align: center;">
+<img src="http://2.bp.blogspot.com/-4vV_s-_maTw/VPMXE1aDg6I/AAAAAAAAHt8/Ck1vV_OugsU/s1600/headphones-turning-into-musical-notes-music-hd-wallpaper-1920x1200-7234.jpg" alt="user upload">
+<div class="carousel-caption" style="color: #373A3C;">
+<h3>Upload custom pieces!</h3>
+<p>Share and sell your own works</p>
+</div>
+</div>
+
+</div>
+
+<!-- Previous/Next controls -->
+<a class="left carousel-control" href="#my-pics" role="button" data-slide="prev">
+<span class="icon-prev" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#my-pics" role="button" data-slide="next">
+<span class="icon-next" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+
+</div>
+
+<!-- Center the image -->
+<style scoped>
+.carousel-item img{
+    margin: 0 auto;
+    text-align: center;
+}
+</style>
+
+
+
+
+
+
+
+
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <div class="fileupload fileupload-new" data-provides="fileupload">
+  <div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;"></div>
+  <div>
+    <span class="btn btn-file"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input type="file" /></span>
+    <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+  </div>
+  <div></div>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+    <audio id="audio-player" src="../app/media/Greensleeves.mp3" type="audio/mp3" controls="controls"></audio>
+
+
+
+</div>
