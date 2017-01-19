@@ -1,127 +1,183 @@
-<div *ngIf="auth.authenticated()"><dashboard></dashboard></div>
-<div *ngIf="!auth.authenticated()">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta name="generator" content="Microsoft FrontPage 5.0">
+    <meta http-equiv="Content-Type" content="text/html;
+      charset=windows-1252">
+    <meta name="keywords" content="Free Sheet Music, IMSLP, Sheet Music,
+      international sheet music, Sheet Music Plus, string quartet music,
+      orchestra music, band music, music school, trios, duets, quartets,
+      solos, keyboard, sheet music violin, sheet music viola, sheet
+      music cello, American String Teachers Association, sheet music
+      bass, sheet music flute, sheet music clarinet, sheet music, oboe,
+      sheet music english horn, sheet music bassoon, sheet music
+      trumpet, ASTA, NEMC, sheet music trombone, sheet music tuba, sheet
+      music brass, sheet music quintet, quintet, piano music, piano
+      sheet music, piano quartets, piano trios, sheet music piano trio,
+      sheet music piano quartet, piano accompaniments, sheet music piano
+      accompaniments,">
+    <title>Sheet Music International</title>
+    <meta name="Description" content="Free Downloadable Sheet Music, or
+      upload and sell your own music">
+    <meta name="robots" content="INDEX, FOLLOW">
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+  body {
+      background: transparent url(http://www.mutopiaproject.org/images/bg-darker.jpg) repeat scroll 30% -15%;
 
-<!--Header -->
-<div class = "jumbotron">
-  <div class = "jumbocontainer">
-    <div style = "font-size: 4.5rem; font-weight: 300;"> <h3>WELCOME TO SHEET MUSIC INTERNATIONAL</h3></div>
-    <p>
-      This is an ongoing project to provide a one-stop website to obtain classical sheet music.
-      We hope you enjoy your time and please let us know how we can improve the site.
-    </p>
-  </div>
-</div>
-<!--End header-->
-
-
-<!-- Carousel container -->
-<div id="my-pics" class="carousel slide" data-ride="carousel">
-
-<!-- Indicators -->
-<ol class="carousel-indicators">
-<li data-target="#my-pics" data-slide-to="0" class="active"></li>
-<li data-target="#my-pics" data-slide-to="1"></li>
-<li data-target="#my-pics" data-slide-to="2"></li>
-</ol>
-
-<!-- Content -->
-<div class="carousel-inner" role="listbox">
-
-<!-- Slide 1 -->
-<div class="carousel-item active" style="text-align: center;">
-<img src="http://mediad.publicbroadcasting.net/p/kunr/files/styles/x_large/public/201408/Classical-Music-Wallpaper.jpg" alt="download">
-<div class="carousel-caption">
-<h3>Sheet Music Database</h3>
-<p>Find and download thousands of pieces</p>
-</div>
-</div>
-
-<!-- Slide 2 -->
-<div class="carousel-item" style="text-align: center;">
-<img src="http://www.nixmuse.com/sliderClassical/data1/images/classicalmusicfull.jpg" alt="share">
-<div class="carousel-caption">
-<h3>Share Music with the World!</h3>
-<p>Made for aspiring and professional composers alike</p>
-</div>
-</div>
-
-<!-- Slide 3 -->
-<div class="carousel-item" style="text-align: center;">
-<img src="http://2.bp.blogspot.com/-4vV_s-_maTw/VPMXE1aDg6I/AAAAAAAAHt8/Ck1vV_OugsU/s1600/headphones-turning-into-musical-notes-music-hd-wallpaper-1920x1200-7234.jpg" alt="user upload">
-<div class="carousel-caption" style="color: #373A3C;">
-<h3>Upload custom pieces!</h3>
-<p>Share and sell your own works</p>
-</div>
-</div>
-
-</div>
-
-<!-- Previous/Next controls -->
-<a class="left carousel-control" href="#my-pics" role="button" data-slide="prev">
-<span class="icon-prev" aria-hidden="true"></span>
-<span class="sr-only">Previous</span>
-</a>
-<a class="right carousel-control" href="#my-pics" role="button" data-slide="next">
-<span class="icon-next" aria-hidden="true"></span>
-<span class="sr-only">Next</span>
-</a>
-
-</div>
-
-<!-- Center the image -->
-<style scoped>
-.carousel-item img{
-    margin: 0 auto;
-    text-align: center;
+  background-repeat: repeat;
 }
-</style>
 
+.box{
+  margin: 50px auto;
+  width: 300px;
+  height: 50px;
+}
 
+/* Search 1 - bg change*/
+.container-1{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.container-1 input#search{
+  width: 300px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #262626;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  
+  -webkit-transition: all .55s ease;
+  -moz-transition: all .55s ease;
+  -ms-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
+}
 
+.container-1 input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+.container-1 input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+.container-1 input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
 
+.container-1 .icon{
+  position: absolute;
+  margin-left: 10px;
+  top: 50%;
+  margin-top: 10px;
+  z-index: 1;
+  color: #4f5b66;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #333;
+}
 
+  /* ANIMATION EFFECTS */
+  .container-1 input#search:focus, .container-1 input#search:active{
+    outline:none;
+    background: #ffffff;
+  }
+  </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">School Music</a></li>
+      <li><a href="#">Repertoire</a></li>
+            <li><a href="#">Donate</a></li>
+      <li><a href="#">Upload Music</a></li>
+      <li><a href="#">Login</a></li>
 
-
-
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        <div class="fileupload fileupload-new" data-provides="fileupload">
-  <div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;"></div>
-  <div>
-    <span class="btn btn-file"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input type="file" /></span>
-    <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+    </ul>
   </div>
-  <div></div>
-</div>
+</nav>
+
+<!--well-->
+  <div class="container">
+      <div class="jumbotron" >
+      <div style="text-align: center;">
+        <h1>Sheet Music International</h1>
+        <p class="lead" style="font-weight: bold;">Free downloadable public domain sheet music.</p>
+        <p>Public Domain and Copyrighted music</p>
+        <p>Upload and sell your Arrangements, and receive 100% of sale price.</p>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+
+
+    <div class="box">
+  <div class="container-1">
+     <form class="search" method="post" action="index.html" >
+   <div class="search">
+
+      <span class="icon"><i class="fa fa-search fa-2x"></i></span>
+      <input type="text" name="q" style="background-color: #ffffff; border: solid #d3d3d3 " id="search" list="languages"  placeholder="Search..." />
+
+      <datalist id="languages">
+        <option value="HTML">
+        <option value="CSS">
+        <option value="JavaScript">
+        <option value="Java">
+        <option value="Ruby">
+        <option value="PHP">
+        <option value="Go">
+        <option value="Erlang">
+        <option value="Python">
+        <option value="C">
+        <option value="C#">
+        <option value="C++">
+        <option value="Sang">
+        <option value="javier">
+        <option value="Sand">
+
+
+      </datalist>
+      </div>
+      </form>
+  </div>
+</div>
+
+<div>
+  <p>Site administrators believe music on this website is in public domain or has been uploaded by owner of copyright for distribution.  This site is monitored and music found to infringe copyright will be removed.  Sheet music International is a public repository that serves as a collection agency only.  Individuals uploading works for publication may be held liable by copyright owner for infringements.  <span style="color: red">We assume no liability or responsibility for downloading or uploading files not in public domain in your country.  Please respect copyright laws in your country. </span></p>
+</div>
+
+
+        
       </div>
     </div>
-  </div>
-</div>
 
+  </body>
 
-
-
-
-
-
-
-    <audio id="audio-player" src="../app/media/Greensleeves.mp3" type="audio/mp3" controls="controls"></audio>
-
-
-
-</div>
+  <footer class="footer">
+      <div class="container">
+        <h4 class="text-muted" style="color: #ffffff">Copyright &copy; Sheet Music International Archives. All Rights Reserved</h4>
+      </div>
+    </footer>
+</html>

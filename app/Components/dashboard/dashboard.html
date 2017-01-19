@@ -506,13 +506,70 @@
 
 <div id="myP2" >
        <div class="col-md-9 col-lg-10 " >
+<div class="col-md-12"> <div style="text-align: center; padding: 5px">
+                <img src="../app/img/user.jpg" type="button" width="100px" height="100px" alt="..." data-toggle="modal" data-target="#myModal">
+            </div></div>
 
-            <div class="col-md-6" style="height: 200px; background-color: red">
-                <div class="panel-heading">testing1</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Upload</h4>
+      </div>
+      <div class="modal-body">
+        <div class="fileupload fileupload-new" data-provides="fileupload">
+  <div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;"></div>
+  <div>
+    <span class="btn btn-file"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input type="file" /></span>
+    <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+  </div>
+  <div></div>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            <div class="col-md-12" >
+
+                <div class="panel-heading" style="border: .5px solid #f1f1f1; background-color: #F5F5F5" >
+                      <h3 class = "panel-title">Panel title</h3>
+
+                </div>
+                <div class = "panel-body" style="border: .5px solid #f1f1f1;">
+                <form> 
+                <div class="form-group "> 
+                        <label>First Name</label>
+                        <input type="Email" class="form-control" placeholder="First Name" name="First Name" width="100%">
+                        </div>
+                        <div class="form-group "> 
+                        <label>Last Name</label>
+                        <input type="Email" class="form-control" placeholder="Last Name" name="Last Name" width="100%">
+                        </div>
+                        <div class="form-group "> 
+                        <label>Email Address</label>
+                        <input type="Email" class="form-control" placeholder="Enter Email" name="Enter Email" width="100%">
+                        </div>
+                        <div class="form-group "> 
+                        <label>Phone Number</label>
+                        <input type="Email" class="form-control" placeholder="Enter Email" name="Enter Phone" width="100%">
+                        </div>
+                        <div style="text-align: center;">
+                       <button type="button" class="btn btn-submit" > Submit</button></div>
+                    </form>
+               </div>
             </div>
-            <div class="col-md-6" style="height: 200px; background-color: blue">
-                
-            </div>
+          
         </div>
         </div>
 
